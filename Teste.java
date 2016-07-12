@@ -32,7 +32,10 @@ public class Teste {
         System.out.println("Saldo: "+conta1.getSaldo());
         System.out.println("Limite: "+conta1.getLimite());
         System.out.println("Numero de Contas Criadas: "+Conta.getContador());
-        
+        conta1.deposita(300);
+        System.out.println("Saldo atualizado apos deposito: "+conta1.getSaldo());
+        conta1.saca(100);
+        System.out.println("Saldo atualizado apos saque: "+conta1.getSaldo());
     }
             
 }
